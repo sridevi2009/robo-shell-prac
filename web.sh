@@ -40,9 +40,9 @@ systemctl start nginx &>> $LOGFILE
 
 VALIDATE $? "starting nginx"
 
-http://<public-IP>:80 &>> $LOGFILE
+# http://<public-IP>:80 &>> $LOGFILE
 
-VALIDATE $? "check the html page"
+# VALIDATE $? "check the html page"
 
 rm -rf /usr/share/nginx/html/* &>> $LOGFILE
 
