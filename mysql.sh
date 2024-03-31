@@ -31,7 +31,7 @@ dnf module disable mysql -y &>> $LOGFILE
 
 VALIDATE $? "disabling mysql"
 
-cp /home/centos/robo-shell-prac/mongo.repo /etc/yum.repos.d/mysql.repo &>> $LOGFILE
+cp /home/centos/robo-shell-prac/mysql.repo /etc/yum.repos.d/mysql.repo &>> $LOGFILE
 
 VALIDATE $? "setup repo file"
 
